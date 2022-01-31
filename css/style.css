@@ -18,12 +18,25 @@ body {
 }
 
 
-.item {
- width: 33%;
- position: relative;
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+
 }
 
-.item > .img1 {
+.item {
+ width:calc(100% / 3 - 20px);
+ position: relative;
+ float: left;
+ margin: 0px 10px;
+
+
+
+ 
+}
+
+.item > img {
     width: 100%;
     
 }
@@ -50,8 +63,7 @@ body {
     padding: 3px 3px;
 }
 
-.like::before {
-    content: "\2665";
+.like {
     color: black;
     background-color: white;
     padding: 8px 10px;
@@ -61,8 +73,30 @@ body {
     right: 0px;
 }
 
-.img1:hover .like {
+.item:hover .like {
     color: red;
+}
+
+.item:hover #img1{
+    cursor: pointer;
+    content: url('../img/1b.webp');
+    width: 100%;
+}
+
+
+.item:hover #img2{
+    cursor: pointer;
+    content: url('../img/2b.webp');
+    width: 100%;
+
+}
+
+
+.item:hover #img3{
+    cursor: pointer;
+    content: url('../img/3b.webp');
+    width: 100%;
+
 }
 
 h6 {
