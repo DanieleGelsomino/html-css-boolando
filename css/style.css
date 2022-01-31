@@ -13,8 +13,7 @@ body {
 
 .container {
     width: 70%;
-    margin: 20px auto;
-    border: 1px solid black;
+    margin: 25px auto;
 }
 
 
@@ -22,7 +21,6 @@ body {
     content: "";
     clear: both;
     display: table;
-
 }
 
 .item {
@@ -30,17 +28,21 @@ body {
  position: relative;
  float: left;
  margin: 0px 10px;
-
-
-
- 
 }
 
 .item > img {
-    width: 100%;
-    
+    width: 100%;   
 }
 
+.like {
+    color: black;
+    background-color: white;
+    padding: 8px 10px;
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+}
 
 .sales {
     position: absolute;
@@ -48,7 +50,6 @@ body {
     left: 0px;
     color: white;
     font-size: 8px;
-
 }
 
 .discount {
@@ -63,19 +64,11 @@ body {
     padding: 3px 3px;
 }
 
-.like {
-    color: black;
-    background-color: white;
-    padding: 8px 10px;
-    font-size: 12px;
-    position: absolute;
-    top: 10px;
-    right: 0px;
-}
 
 .item:hover .like {
     color: red;
 }
+
 
 .item:hover #img1{
     cursor: pointer;
@@ -88,7 +81,6 @@ body {
     cursor: pointer;
     content: url('../img/2b.webp');
     width: 100%;
-
 }
 
 
@@ -96,29 +88,53 @@ body {
     cursor: pointer;
     content: url('../img/3b.webp');
     width: 100%;
-
 }
+
+
+.item:hover #img4{
+    cursor: pointer;
+    content: url('../img/4b.webp');
+    width: 100%;
+}
+
+
+.item:hover #img5{
+    cursor: pointer;
+    content: url('../img/5b.webp');
+    width: 100%;
+}
+
+
+.item:hover #img6{
+    cursor: pointer;
+    content: url('../img/6b.webp');
+    width: 100%;
+}
+
 
 h6 {
     font-weight: 500;
     font-size: 8px;
 }
+
+
 p {
     text-transform: uppercase;
     font-weight: bold;
 }
 
+
 .price::after,
 .prev-price::after {
     content: "\20AC";
-    
 }
+
 
 .price {
     font-size: 8px;
     color: red;
-
 }
+
 
 .prev-price {
     font-size: 8px;
