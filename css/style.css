@@ -3,3 +3,90 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.container {
+    width: 70%;
+    margin: 20px auto;
+    border: 1px solid black;
+}
+
+
+.item {
+ width: 33%;
+ position: relative;
+}
+
+.item > .img1 {
+    width: 100%;
+    
+}
+
+
+.sales {
+    position: absolute;
+    bottom: 50px;
+    left: 0px;
+    color: white;
+    font-size: 8px;
+
+}
+
+.discount {
+    background-color: red;
+    display: inline-block;
+    padding: 3px 3px;
+}
+
+.eco {
+    background-color: green;
+    display: inline-block;
+    padding: 3px 3px;
+}
+
+.like::before {
+    content: "\2665";
+    color: black;
+    background-color: white;
+    padding: 8px 10px;
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+}
+
+.img1:hover .like {
+    color: red;
+}
+
+h6 {
+    font-weight: 500;
+    font-size: 8px;
+}
+p {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.price::after,
+.prev-price::after {
+    content: "\20AC";
+    
+}
+
+.price {
+    font-size: 8px;
+    color: red;
+
+}
+
+.prev-price {
+    font-size: 8px;
+    text-decoration: line-through;
+}
